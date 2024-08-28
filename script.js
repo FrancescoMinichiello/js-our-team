@@ -12,43 +12,46 @@
 const information = document.querySelector('.information');
 console.log(information)
 
+const image = document.getElementById('image');
+console.log(image)
+
 
 const team = [
     {
         name: 'Wayne',
         lastName: 'Barnett',
         job: 'Founder & CEO',
-        imageProfile: 'wayne-barnett-founder-ceo.jpg'
+        imageProfile: 'https://erikastreppa.it/wp-content/uploads/2019/04/risata-obama.jpg'
     },
     {
         name: 'Angela',
         lastName: 'Caroll',
         job: 'Chief Editor',
-        imageProfile: 'angela-caroll-chief-editor.jpg'
+        imageProfile: 'https://img.freepik.com/free-photo/positive-female-smiling-funny-model-posing-near-pink-wall-studio_158538-3433.jpg'
     },
     {
         name: 'Walter',
         lastName: 'Gordon',
         job: 'Office Manager',
-        imageProfile: 'walter-gordon-office-manager.jpg'
+        imageProfile: 'https://previews.123rf.com/images/mimagephotography/mimagephotography1604/mimagephotography160400325/55806111-close-up-ritratto-di-un-uomo-pi%C3%B9-anziano-bello-che-sorride-al-di-fuori.jpg'
     },
     {
         name: 'Angela',
         lastName: 'Lopez',
         job: 'Founder & CEO',
-        imageProfile: 'angela-lopez-social-media-manager.jpg'
+        imageProfile: 'https://img.freepik.com/premium-photo/smiling-woman-with-long-hair-casual-attire-poses-against-light-background-during-daytime_1247367-48048.jpg'
     },
     {
         name: 'Scott',
         lastName: 'Estrada',
         job: 'Developer',
-        imageProfile: 'scott-estrada-developer.jpg'
+        imageProfile: 'https://img.freepik.com/foto-premium/uomo-d-affari-che-sorride-e-che-fa-segno-giusto_13339-95622.jpg'
     },
     {
         name: 'Barbara',
         lastName: 'Ramos',
         job: 'Graphic Designer',
-        imageProfile: 'barbara-ramos-graphic-designer.jpg'
+        imageProfile: 'https://sprint24.com/pic/lg/10-siti-dove-scaricare-immagi/c/-/ciu6488k.jpg'
     },
 
 ]
@@ -56,13 +59,13 @@ const team = [
 
 // ciclo per girare nell'array
 for (let i = 0; i < team.length; i++) {
-    team.fi
     let fullDesc = `
     <h1>${team[i].name} ${team[i].lastName}</h1>
     <h3>${team[i].job}</h3> 
-    <h5>${team[i].imageProfile}</h5>
+    <img src="${team[i].imageProfile}"></img>
     <hr>
     `;
     console.log(fullDesc)
     information.innerHTML += fullDesc;
+
 }
