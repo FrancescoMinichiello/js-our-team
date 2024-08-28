@@ -53,7 +53,16 @@ const team = [
 
 ]
 
-for (let i = 0; i < team.length; i++) {
-    console.table(team[i])
-}
 
+// ciclo per girare nell'array
+for (let i = 0; i < team.length; i++) {
+    team.fi
+    let fullDesc = `
+    <h1>${team[i].name} ${team[i].lastName}</h1>
+    <h3>${team[i].job}</h3> 
+    <h5>${team[i].imageProfile}</h5>
+    <hr>
+    `;
+    console.log(fullDesc)
+    information.innerHTML += fullDesc;
+}
